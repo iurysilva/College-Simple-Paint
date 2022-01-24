@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar, .container{
+    background-color: rgb(28, 28, 29);
+    width: 1200px;
+    border-radius: 3px;
+}
+.navbar{
+    padding: 1em;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn, input{
+    height: 35px;
+    padding: 0 1em;
+    border-radius: 4px;
+    background-color: #939393;
+    color: white;
+    margin: 2px;
+}
+.color{
+    padding: 0 .25em;
+    width: 100px;
+    margin: 0 1em;
+}
+
+.footbar{
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scaleBar{
+    color:white;
+    background-color: white;
+    margin: 5px;
+}
+
+#my-canvas{
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    border: 3px solid #000000;
+    image-rendering: pixelated;
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="css/style.css"> <!-- usando agora o style ao inves do mainstyle -->
+    <script src="https://unpkg.com/mathjs@10.1.0/lib/browser/math.js"></script> <!-- biblioteca pra fazer calculos com matriz -->
+    <title>Paint 2</title>
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <button id="pixel-btn" class="btn">Pixel</button>
+        <button id="line-btn" class="btn">Line</button>
+        <button id="curve-btn" class="btn">Curve</button>
+        <button id="circle-btn" class="btn">Circle</button>
+        <button id="polygon-btn" class="btn">Polygon</button>
+        <button id="boundary-fill-btn" class="btn">Boundary Fill</button>
+        <button id="scanline-fill-btn" class="btn">Scanline Fill</button>
+        <button id="clip-btn" class="btn">Clip</button>
+        <button id="translation-btn" class="btn">Translation</button>
+        <button id="scale-btn" class="btn">Scale</button>
+        <button id="rotation-btn" class="btn">Rotation</button>
+
+        <button id="clear-btn" class="btn">Clear</button>
+        <button id="draw-btn" class="btn">Draw</button>
+    </div>
+    <canvas id="my-canvas" width="150" height="150"></canvas> <!-- novas dimensões -->
+    <div class="footbar">
+        <label>Escala X</label>
+        <input type="range" id="xScale" class="scaleBar" min="1" max="15" step="1" value="1">
+        <label>Escala Y</label>
+        <input type="range" id="yScale" class="scaleBar" min="1" max="15" step="1" value="1">
+    </div>
+</div>
+    <script src="js/main.js" type="module"></script> <!-- usando agora o main ao inves do index-->
+</body>
+</html>
